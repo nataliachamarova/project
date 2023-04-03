@@ -1,0 +1,509 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --first-color: #F7F9FA; 
+    --second-color: #FFFFFF;
+    --third-color:   #F8F8F8;
+    --fourth-color: #437684;
+    --fifth-color:  #649DAD;
+    --sixth-color: #000000;
+    --seventh-color: #399EAF;
+    --eighth-color: #D9D9D9;  
+    --ninth-color: #3C6A76;
+    --tenth-color: #EAF3F5;
+    --eleven-color:#B6D9E3;
+    --twelfth-color: #979797;
+    --thirteenth-color: #BFDCE4;
+   
+}
+
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/font/MontserratRegular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('/font/MontserratRegular.woff2') format('woff2'),
+        url('/font/MontserratRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('font/MontserratBold.eot');
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+		url('/font/MontserratBold.woff2') format('woff2'),
+        url('/font/MontserratBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+    font-display: swap;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* glob */
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 980px;
+    padding: 0 10px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.section-title {
+    margin: 0;
+}
+
+.section-descr {
+    margin: 0;
+}
+
+
+/* container */
+
+header{
+    padding: 40px 0 20px 0;
+}
+
+.logo__img{
+    width: 131px;
+    height: 97px;
+}
+
+.form{
+    margin: 0 auto;
+    padding: 35px  0 52px 0;
+    width: 650px;
+    background: var(--second-color);
+    box-shadow: 0px 0px 20px rgba(47, 69, 112, 0.08);
+    border-radius: 30px;
+}
+
+.form__link{ 
+    padding-left: 34px;
+    margin-left: 46px;
+    /* margin-bottom: 39px; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--twelfth-color);
+    background: transparent url("../img/arrow.svg") no-repeat left / 24px 12px;
+    /* background-position: left 10px;
+    background-size: 24px 12px; */
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px 96px 0 96px;
+}
+
+.card__btn{
+   display: flex;
+   margin-bottom: 153px;
+}
+
+.btn__regist{
+    padding: 17px 40px 17px 54px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--sixth-color);
+    background: var(--second-color);
+    border: 2px solid #979797;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: background-color .5s, color .5s, border-color .5s;
+}
+.btn__regist:hover {
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+    border-color: transparent;
+}
+
+.btn__regist:focus-visible {
+    background-color: var(--ninth-color);
+    color: var(--second-color);
+    border-color: transparent;
+}
+
+.btn__regist:active {
+    background-color: var(--thirteenth-color);
+    color: var(--second-color);
+    border-color: transparent;
+}
+
+
+.btn__entrance{
+    padding: 17px 90px 17px 90px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--second-color);
+    background: var(--fifth-color);
+    border-radius: 0 5px 5px 0px;
+    border: 2px solid transparent;
+    transition: background-color .5s, color .5s, border-color .5s;
+}
+
+.btn__entrance:hover {
+    background-color: var(--fourth-color);
+}
+
+.btn__entrance:focus-visible {
+    background-color: var(--ninth-color);
+}
+
+.btn__entrance:active {
+    background-color: var(--thirteenth-color);
+}
+
+.card__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.input-box__phone{
+    position: relative;
+}
+
+
+.label-phone{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: var(--second-color);
+    color: var(--fifth-color);
+    padding: 0 5px;
+}
+
+.input-phone {
+    padding: 10px;
+    margin-bottom: 55px;
+    width: 460px;
+    height: 55px;
+    background: var(--second-color);
+    border: 2px solid var(--fifth-color);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color .5s;  
+}
+
+.input-phone:focus-within {
+    border-color: rgba(255, 101, 91, 1);
+}
+
+.input-phone:active {
+    border-color: rgba(255, 101, 91, 1);
+}
+
+
+.input-box__phone:focus-within .label-phone{
+    color: rgba(255, 101, 91, 1);
+}
+
+.input-box__password{
+    position: relative;
+    margin-bottom: 69px;
+}
+
+
+.password__label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: var(--fifth-color);
+    background: var(--second-color);
+    padding: 0 5px;
+    z-index: 1;
+    transition: color .5s;  
+}
+
+.input-password {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 55px;
+    width: 460px;
+    height: 55px;
+    background: var(--second-color);
+    border: 2px solid var(--fifth-color);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color .5s;  
+}
+
+.input-password:focus-within {
+    border-color: rgba(255, 101, 91, 1);
+}
+
+.input-password:active {
+    border-color: rgba(255, 101, 91, 1);
+}
+
+
+.input-box__password:focus-within .password__label{
+    color: rgba(255, 101, 91, 1);
+}
+
+
+
+.password__label-btn{
+    position: relative;
+    width: 460px;
+    height: 55px;
+}
+
+.img__password{
+    position: absolute;
+    transform-origin: right;
+    top: 30%;
+    right: 15px;
+    width: 37px;
+    height: 20px; 
+    cursor: pointer;
+}
+
+.img__password-active{
+    display: none;
+    position: absolute;
+    transform-origin: right;
+    top: 40%;
+    right: 15px;
+    width: 37px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.btn__bottom{
+    margin-bottom: 69px;
+    padding: 14px 55px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--second-color);
+    background: var(--fifth-color);
+    border-radius: 5px;    
+    transition: background-color .5s, color .5s, border-color .5s;
+}
+
+.btn__bottom:hover {
+    background-color: var(--fourth-color);
+}
+
+.btn__bottom:focus-visible {
+    background-color: var(--ninth-color);
+}
+
+.btn__bottom:active {
+    background-color: var(--thirteenth-color);
+}
+
+.form__descr{
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.4693px;
+    line-height: 23px;
+    color:  var(--twelfth-color);
+}
+
+
+.google{
+    margin-bottom: 40px;
+    width: 52px;
+    height: 52px;
+}
+
+.google__svg{
+    width: 52px;
+    height: 52px;
+}
+
+
+/*  */
+
+/*  */
+
+
+
+@media (max-width: 750px){
+
+.form{
+    width: 550px;
+}
+
+.form__container {
+    padding: 39px 56px 0 56px;
+}
+
+}
+
+
+@media (max-width: 600px){
+.form{
+    width: 450px;
+}
+
+.form__link {
+    padding-left: 34px;
+    margin-left: 24px ;
+}
+
+.btn__regist {
+    padding: 14px 20px 14px 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+    
+.btn__entrance{
+    padding: 10px 70px 10px 70px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+
+.input-phone{
+    width: 360px;
+}
+
+.password__label-btn,
+.input-password  {
+    width: 360px;
+}
+
+
+.btn__bottom {
+    padding: 14px 18px;
+    margin-right: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.form__bottom-descr {
+    width: 176px;
+}
+}
+    
+@media (max-width: 450px){
+.container{
+    max-width: 450px;
+}
+.form{
+   max-width:  340px;
+}
+
+.form__container {
+    padding: 39px 30px 0 30px;
+}
+    
+.btn__entrance{
+    padding: 10px 50px 10px 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.input-phone{
+    width: 300px;
+}
+
+.password__label-btn,
+.input-password  {
+    width: 300px;
+}
+
+.btn__bottom {
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+    
+.form__descr {
+    font-size: 14px;
+    line-height: 23px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма загрузки</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="body-wraper">
+        <header class="header">
+            <div class="heder__container container">
+                <button aria-label="Бургер меню" class="header__burger-btn btn-reset" id="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <a class=" header__logo logo" href="#">
+                    <img class="logo__img" src="img/logo-VOICE.png" alt="Logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list list-reset">
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                                Партнерская программа
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                                Тариф
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                                Баланс
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn btn-reset" id="btn">
+                    Профиль
+                </button>
+                <ul class="header__menu list-reset" id="menu">
+                    <li class="header__item-menu item-menu__email">
+                        <p class="header-menu__email">
+                            toytoy80@mail.ru
+                        </p>
+                        <button class="header-menu__btn btn-reset">
+                            Тариф базовый
+                        </button>
+                    </li>
+                    <li class="header__item-menu">
+                        <a class="header__link-menu" href="#">
+                            Платежи
+                        </a>
+                        <a class="header__link-menu" href="#">
+                            Техподдержка
+                        </a>
+                        <a class="header__link-menu" href="#">
+                            Тарифная программма
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </header>
+        <main class="main">
+            <section class="form">
+                <div class="form__container container">
+                    <ul class="form__list-menu list-reset">
+                        <li class="form__item">
+                            <a href="" class="form__link-right form__link">
+                                Перейти к&nbsp;списку обзвонов
+                            </a>
+                            <a href="" class="form__link-right form__link">
+                                Инструкция
+                            </a>
+                        </li>
+                        <li class="form__item">
+                            <a href="" class="form__link-left form__link">
+                                На главную
+                            </a>
+                        </li>
+                    </ul>
+                    <form  class="form" id="search-form" action="https://jsonplaceholder.typicode.com/posts"
+                    method="post">
+                        <ul class="form__list-form list-reset">
+                            <li class="form-item__header">
+                                <p class="item__header-descr section-descr">
+                                    Обзвон #1
+                                </p>
+                                <div class="item-header__card">
+                                    <p class="item__header-descr  header-descr__card section-descr">
+                                        В разработке
+                                    </p>
+                                    <div class="header-card__avatar"> </div>
+                                    <!-- <img class="header-card__avatar" src="/img/avatar.svg" alt="Avatar"> -->
+                                </div>
+
+                            </li>
+                            <li class="list-form__item item-card__file-text">
+                                <svg class="active-svg" width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#649DAD" />
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <svg class="passive-svg" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#BFDCE4"/>
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                <span class="active-span passive-span"></span>
+
+                                <div class="card__file-text">
+                                    <h2 class="file-text__title">
+                                        Загрузите базу для обзвона
+                                    </h2>
+                                    <p class="file-text__descr section-descr">
+                                        К&nbsp;загрузке доступны только файлы формата xlsx, csv, txt<br>Номера должны быть
+                                        формате +79994458621, 89994458621, 79994458621
+                                    </p>
+                                </div>
+                                <div class="card__text-btn">
+                                    <button class="file-text__btn btn-reset">
+                                        Загрузите файлы
+                                    </button>
+                                    <div class="loading">
+                                        <div class="card__loading-text">
+                                            <svg class="loading__file-text" width="40" height="41" viewBox="0 0 40 41"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M31.819 29.9032V38.371C31.819 38.9919 31.3437 39.5 30.7628 39.5H8.05613C7.47526 39.5 7 38.9919 7 38.371V5.62903C7 5.00806 7.47526 4.5 8.05613 4.5H21.733L31.819 14.7177V29.9032Z"
+                                                    fill="white" stroke="#979797" />
+                                                <path
+                                                    d="M32 15.1694H23.0229C22.4421 15.1694 21.9668 14.6613 21.9668 14.0403V4.5"
+                                                    stroke="#979797" />
+                                                <path
+                                                    d="M35.819 26.9032V35.371C35.819 35.9919 35.3437 36.5 34.7628 36.5H12.0561C11.4753 36.5 11 35.9919 11 35.371V2.62903C11 2.00806 11.4753 1.5 12.0561 1.5H25.733L35.819 11.7177V26.9032Z"
+                                                    fill="white" stroke="#979797" />
+                                                <path
+                                                    d="M36 12.1694H27.0229C26.4421 12.1694 25.9668 11.6613 25.9668 11.0403V1.5"
+                                                    stroke="#979797" />
+                                            </svg>
+                                            <span class="loading__descr-text">
+                                                dodis/txt
+                                            </span>
+                                            <svg class="loading-trash-text" width="24" height="27" viewBox="0 0 24 27"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="4" y="5.5" width="16" height="20" rx="1" stroke="#979797"
+                                                    stroke-width="2" />
+                                                <line x1="9" y1="1.5" x2="15" y2="1.5" stroke="#979797" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <line x1="1" y1="5.5" x2="23" y2="5.5" stroke="#979797" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <line x1="9" y1="10.5" x2="9" y2="20.5" stroke="#979797"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                                <line x1="15" y1="10.5" x2="15" y2="20.5" stroke="#979797"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="loading__block-text"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-form__item  item-card__file-audio">
+                                <svg class="active-svg__audio" width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#649DAD" />
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <svg class="passive-svg__audio" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#BFDCE4"/>
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <span class="active-span__audio passive-span__audio"></span>
+                                <div class="card__file-audio">
+                                    <h2 class="file-auduo__title">
+                                        Загрузите аудио файл
+                                    </h2>
+                                    <p class="file-audio__descr section-descr">
+                                        Требования к&nbsp;файлу: формат vaw mp3 ogg
+                                        (до&nbsp;45&nbsp;секунд)<br>В&nbsp;начале записи
+                                        скажите фразу &laquo;АЛО&raquo; и&nbsp;выдержите паузу
+                                    </p>
+                                    <a href="" class="file-audio__link">
+                                        Заказать разработку скрипта ролика
+                                    </a>
+                                    <a href="" class="file-audio__link">
+                                        Заказать запись ролика
+                                    </a>
+                                </div>
+                                <div class="card__audio-btn">
+                                    <button class="file-audio__btn btn-reset">
+                                        Загрузите файлы
+                                    </button>
+                                    <div class="loading__audio">
+                                        <div class="card__loading-audio">
+                                            <svg class="loading__file-audio" width="40" height="41" viewBox="0 0 40 41"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M31.819 29.9032V38.371C31.819 38.9919 31.3437 39.5 30.7628 39.5H8.05613C7.47526 39.5 7 38.9919 7 38.371V5.62903C7 5.00806 7.47526 4.5 8.05613 4.5H21.733L31.819 14.7177V29.9032Z"
+                                                    fill="white" stroke="#979797" />
+                                                <path
+                                                    d="M32 15.1694H23.0229C22.4421 15.1694 21.9668 14.6613 21.9668 14.0403V4.5"
+                                                    stroke="#979797" />
+                                                <path
+                                                    d="M35.819 26.9032V35.371C35.819 35.9919 35.3437 36.5 34.7628 36.5H12.0561C11.4753 36.5 11 35.9919 11 35.371V2.62903C11 2.00806 11.4753 1.5 12.0561 1.5H25.733L35.819 11.7177V26.9032Z"
+                                                    fill="white" stroke="#979797" />
+                                                <path
+                                                    d="M36 12.1694H27.0229C26.4421 12.1694 25.9668 11.6613 25.9668 11.0403V1.5"
+                                                    stroke="#979797" />
+                                            </svg>
+                                            <span class="loading__descr-audio">
+                                                dodis/txt
+                                            </span>
+                                            <svg class="loading-trash-audio" width="24" height="27" viewBox="0 0 24 27"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="4" y="5.5" width="16" height="20" rx="1" stroke="#979797"
+                                                    stroke-width="2" />
+                                                <line x1="9" y1="1.5" x2="15" y2="1.5" stroke="#979797" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <line x1="1" y1="5.5" x2="23" y2="5.5" stroke="#979797" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <line x1="9" y1="10.5" x2="9" y2="20.5" stroke="#979797"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                                <line x1="15" y1="10.5" x2="15" y2="20.5" stroke="#979797"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="loading__block-audio"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-form__item item-card__time">
+                                <svg class="active-svg__time" width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#649DAD" />
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <svg class="passive-svg__time" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#BFDCE4"/>
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                <span class="active-span__time passive-span__time"></span>
+                                <h2 class="card-time__title section-title">
+                                    Укажите время начала прозвона
+                                </h2>
+                                <div class="card-time__input">
+                                    <div class="time-container1">
+                                        <input type="text" name="" id="first__time-input" placeholder="__" maxlength="2"
+                                            class="time__input1 input">
+                                        <div class="time__blok1"></div>
+                                    </div>
+                                    <p class="time__descr section-descr">:</p>
+                                    <div class="time-container2">
+                                        <input type="text" name="" id="second__time-input" placeholder="__" maxlength="2"
+                                            class="time__input2 input">
+                                        <div class="time__blok2"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-form__item item-card__celections">
+                                <svg class="active-svg__celections" width="37" height="37" viewBox="0 0 37 37"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#649DAD" />
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <svg class="passive-svg__celections" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#BFDCE4"/>
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                <span class="active-span__celections passive-span__celections"></span>
+                                <h2 class="card-celections__title section-title">
+                                    Укажите количество повторных выборов
+                                </h2>
+                                <div class="input-container">
+                                    <input type="text" name="" id="number" placeholder="__" maxlength="2"
+                                        class="celections__input">
+                                    <div class="celection__blok"></div>
+                                </div>
+                            </li>
+                            <li class="list-form__item  form__item__action">
+                                <svg class="active-svg__action" width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#649DAD" />
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <svg class="passive-svg__action" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.5" cy="18.5" r="18.5" fill="#BFDCE4"/>
+                                    <path d="M10 19.8605L16.2769 26L27 14" stroke="#F1F1F1" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <h2 class="card-actions__title section-title">
+                                    Укажите целевое действие клиента
+                                </h2>
+                                <ul class="action__list list-reset">
+                                    <li class="action__item">
+                                        <div class="action-item__card">
+                                        <select class="form-select js__choice" id="action" name="action">
+                                            <option class="form-option" value="" >Действие</option>
+                                            <option class="form-option" >Действие</option>
+                                            <option class="form-option" >Нажать кнопку</option>
+                                            <option class="form-option" >Какое-то действие
+                                            </option>
+                                            <option class="form-option">Какое-то действие</option>
+                                        </select>
+                                    </div>
+                                    <div class="action-item__card">
+                                        <select class="form-select js__choice1" id="action" name="action">
+                                            <option class="form-option" value="" selected>Действие</option>
+                                            <option class="form-option">Действие</option>
+                                            <option class="form-option" >Нажать кнопку</option>
+                                            <option class="form-option" >Какое-то действие
+                                            </option>
+                                            <option class="form-option">Какое-то действие
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="action-item__card">
+                                        <select class="form-select js__choice2" id="action" name="action">
+                                            <option class="form-option" value="" selected>Действие</option>
+                                            <option class="form-option" >Действие</option>
+                                            <option class="form-option" >Нажать кнопку</option>
+                                            <option class="form-option" >Какое-то действие
+                                            </option>
+                                            <option class="form-option" >Какое-то действие
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    </li>
+                                    <li class="result__item">
+                                        <div class="result-item__card">
+                                            <select class="form-select js__choice3 " id="action" name="action">
+                                                <option class="form-option" value="" selected>Результат</option>
+                                                <option class="form-option" >Результат</option>
+                                                <option class="form-option" >Нажать кнопку</option>
+                                                <option class="form-option" >Какое-то действие
+                                                </option>
+                                                <option class="form-option" >Какое-то действие
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="result-item__card">
+                                            <select class="form-select js__choice4" id="action" name="action">
+                                                <option class="form-option" value="" selected>Результат</option>
+                                                <option class="form-option" >Результат</option>
+                                                <option class="form-option" >Нажать кнопку</option>
+                                                <option class="form-option" >Какое-то действие
+                                                </option>
+                                                <option class="form-option" >Какое-то действие
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="result-item__card">
+                                            <select class="form-select js__choice5" id="action" name="action">
+                                                <option class="form-option" value="" selected>Результат</option>
+                                                <option class="form-option" >Результат</option>
+                                                <option class="form-option" >Нажать кнопку</option>
+                                                <option class="form-option" >Какое-то действие
+                                                </option>
+                                                <option class="form-option" >Какое-то действие
+                                                </option>
+                                            </select>
+                                        </div>                                        
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="form-btn__card">
+                            <button class="form__btn btn-reset">
+                                Отправить на модерацию
+                            </button>
+                            <p class="form-btn__descr section__descr">
+                                Модерация занимает не&nbsp;более 30&nbsp;минут
+                            </p>
+                        </div>
+                    </form>
+                    <div class="card__btn ">
+                        <button class="buttons__card btn-reset">
+                            Заказать разработку <br> умного голосового бота
+                        </button>
+                        <button class="buttons__card btn-reset">
+                            По&nbsp;коммерческим<br>вопросам
+                        </button>
+                        <button class="buttons__card buttons__card3 btn-reset">
+                            Задать вопрос в&nbsp;телеграм
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+            <div class="footer__container container">
+                <img src="./img/logo-VOICE.png" alt="Logo" class="footer__img">
+
+                <ul class="footer__nav list-reset">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link footer__link-card1 ">
+                            О&nbsp;сервисе
+                        </a>
+                        <a href="#" class="footer__link ">
+                            Тарифы
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Вопрос-ответ
+                        </a>
+                        <a href="#" class="footer__link">
+                            Сотрудничество
+                        </a>
+                        <a href="#" class="footer__link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Поддержка
+                        </a>
+                        <a href="#" class="footer__link">
+                            Конфиденциальность
+                        </a>
+                        <a href="#" class="footer__link">
+                            Условия пользования
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+        <script defer src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
